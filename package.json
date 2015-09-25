@@ -1,0 +1,24 @@
+{
+  "name": "happner-dashboard",
+  "version": "0.0.1",
+  "description": "dashboard plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/happner/happner-dashboard"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/happner/happner-dashboard/issues"
+  },
+  "homepage": "https://github.com/happner/happner-dashboard",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4",
+    "should": "^7.1.0",
+    "when": "^3.7.3"
+  },
+  "dependencies": {
+    "bower": "^1.5.2"
+  }
+}
