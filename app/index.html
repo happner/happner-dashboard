@@ -9,9 +9,9 @@
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/resources/bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/happner-resources/bower/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="/resources/bower/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/happner-resources/bower/ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -28,7 +28,7 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- angular chart -->
-    <link rel="stylesheet" href="/resources/bower/angular-chart.js/dist/angular-chart.css" />
+    <link rel="stylesheet" href="/happner-resources/bower/angular-chart.js/dist/angular-chart.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,17 +76,7 @@
 	          <div class="navbar-custom-menu">
 	            <ul class="nav navbar-nav">
 
-	            	<li class="dropdown messages-menu todo" ng-include="'partials/part_menu_messages.html'"></li>
-	            	<li class="dropdown tasks-menu todo" ng-include="'partials/part_menu_tasks.html'"></li>
-	            	<li class="dropdown notifications-menu todo" ng-include="'partials/part_menu_notifications.html'"></li>
-	            	<li class="dropdown user user-menu todo" ng-include="'partials/part_menu_user.html'"></li>
-
-	            	<!-- 
-					
-	            	<ng-include src="'partials/part_menu_notifications.html'"></ng-include>
-	            	<ng-include src="'partials/part_menu_tasks.html'"></ng-include>
-	            	<ng-include src="'partials/part_menu_user.html'"></ng-include>
-	            	-->
+	            	
 
 	              <!-- Control Sidebar Toggle Button -->
 	              <li>
@@ -101,8 +91,7 @@
 	        <!-- sidebar: style can be found in sidebar.less -->
 	        <section class="sidebar">
 	          
-	          	<!-- user info -->
-	        	<div class="user-panel todo" ng-include="'partials/part_sidebar_user_panel.html'"></div>
+	          
 
 	        	<!-- search -->
 	        	<form action="#" method="get" class="sidebar-form todo" ng-include="'partials/part_search.html'"></form>
@@ -144,10 +133,7 @@
 	        <!-- Content Header (Page header) -->
 	        <section class="content-header">
 	          <h1>{{stats.system.meshName}}</h1>
-	          <ol class="breadcrumb todo">
-	            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-	            <li class="active">Dashboard</li>
-	          </ol>
+	         
 	        </section>
 
 	        <!-- Main content -->
@@ -160,18 +146,10 @@
 	             
 	              <!-- sys stats -->
 	              <div class="box box-solid bg-gray" ng-include="'partials/part_chart_meshstatistics.html'"></div>
-
-	              <!-- Chat box -->
-	              <div class="box box-success todo" ng-include="'partials/part_chatbox.html'"></div>
-
-	              <!-- TO DO List -->
+	              <!-- sys logs -->
 	              <div class="box box-primary" ng-include="'partials/part_logs.html'"></div><!-- /.box -->
 
-	              <!-- quick email widget -->
-	              <div class="box box-info todo" ng-include="'partials/part_email.html'">
-	                
-	              </div>
-
+	              
 	            </section><!-- /.Left col -->
 	            <!-- right col (We are only adding the ID to make the widgets sortable)-->
 	            <section class="col-lg-5 connectedSortable">
@@ -184,9 +162,6 @@
 
 	              <!-- sys resources disk -->
 	              <div class="box box-solid bg-gray" ng-include="'partials/part_chart_diskusage.html'"></div>
-
-	              <!-- Calendar -->
-	              <div class="box box-solid bg-green-gradient todo" ng-include="'partials/part_calendar.html'"></div><!-- /.box -->
 
 	            </section><!-- right col -->
 	          </div><!-- /.row (main row) -->
@@ -372,14 +347,14 @@
     <!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="/resources/bower/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/happner-resources/bower/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
       $.widget.bridge('uibutton', $.ui.button);
     </script>
 
 
-    <script src="/resources/bower/angular/angular.js"></script>
+    <script src="/happner-resources/bower/angular/angular.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
  	 <!-- Sparkline -->
@@ -390,7 +365,7 @@
     <!-- jQuery Knob Chart -->
     <script src="plugins/knob/jquery.knob.js"></script>
     <!-- daterangepicker -->
-    <script src="/resources/bower/moment/min/moment.min.js"></script>
+    <script src="/happner-resources/bower/moment/min/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
     <!-- datepicker -->
     <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
@@ -404,16 +379,16 @@
     <!-- AdminLTE App -->
     <script src="js/grid-jquery.js"></script>
     
-	<script src="/resources/bower/angular-ui/build/angular-ui.min.js"></script>
+	<script src="/happner-resources/bower/angular-ui/build/angular-ui.min.js"></script>
 
-    <script src="/resources/bower/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="/resources/bower/angular-animate/angular-animate.min.js"></script>
-    <script src="/resources/bower/angular-ui-sortable/sortable.min.js"></script>
-    <script src="/resources/bower/json-edit/js/directives.js"></script>
-    <script src="/resources/bower/angular-moment/angular-moment.min.js"></script>
+    <script src="/happner-resources/bower/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/happner-resources/bower/angular-animate/angular-animate.min.js"></script>
+    <script src="/happner-resources/bower/angular-ui-sortable/sortable.min.js"></script>
+    <script src="/happner-resources/bower/json-edit/js/directives.js"></script>
+    <script src="/happner-resources/bower/angular-moment/angular-moment.min.js"></script>
 
-  	<script src="/resources/bower/Chart.js/Chart.min.js"></script>
-  	<script src="/resources/bower/angular-chart.js/dist/angular-chart.min.js"></script>
+  	<script src="/happner-resources/bower/Chart.js/Chart.min.js"></script>
+  	<script src="/happner-resources/bower/angular-chart.js/dist/angular-chart.min.js"></script>
 	
    	<script src="../../api/client"></script>
 	<script src="js/grid-angular.js"></script>

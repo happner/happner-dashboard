@@ -1,6 +1,6 @@
 {
   "name": "happner-dashboard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "dashboard plugin",
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
     "when": "^3.7.3"
   },
   "dependencies": {
-    "bower": "^1.5.2"
+    "bower": "^1.5.2",
+    "happner-resources":"^0.0.2"
   }
 }
