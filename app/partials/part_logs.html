@@ -24,7 +24,7 @@
 </div><!-- /.box-header -->
 <div class="box-body">
   <ul class="todo-list">
-    <li ng-repeat="log in stats.logs">
+    <li ng-repeat="log in stats.logs" class="bg-gray-dark">
       <span class="label label-{{log.level}}"><i class="fa fa-clock-o"></i>&nbsp;{{log.timestamp}}</span>
       <span class="text">{{log.component}}</span>
       <span class="text">{{log.message}}</span>

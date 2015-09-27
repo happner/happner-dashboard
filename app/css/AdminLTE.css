@@ -1860,7 +1860,6 @@ a:focus {
   padding: 10px;
   background: #f4f4f4;
   margin-bottom: 2px;
-  border-left: 2px solid #e6e7e8;
   color: #444;
 }
 .todo-list > li:last-of-type {
@@ -4145,6 +4144,7 @@ table.text-center th {
 .bg-purple,
 .bg-maroon,
 .bg-black,
+.bg-gray-dark,
 .bg-red-active,
 .bg-yellow-active,
 .bg-aqua-active,
@@ -4160,6 +4160,7 @@ table.text-center th {
 .bg-purple-active,
 .bg-maroon-active,
 .bg-black-active,
+.bg-gray-dark-active,
 .callout.callout-danger,
 .callout.callout-warning,
 .callout.callout-info,
@@ -4191,6 +4192,17 @@ table.text-center th {
 .modal-danger .modal-footer {
   color: #fff !important;
 }
+
+.bg-gray-dark {
+  color: white !important;
+  background-color: #222d32 !important;
+}
+
+.bg-gray-dark a {
+  color: white !important;
+  background-color: #222d32 !important;
+}
+
 .bg-gray {
   color: #000;
   background-color: #d2d6de !important;
