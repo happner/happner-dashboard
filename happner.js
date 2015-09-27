@@ -1,5 +1,5 @@
 module.exports = {
-	"id":"happner-dashboard",
+	"name":"happner-dashboard",
 	"autoload":{
 		"component":{
 			startMethod:"initialize",
@@ -20,7 +20,7 @@ an alternative - demonstrates how one would share a bunch of modules on a single
 module.exports = {
 	suite:[
 		{
-			"id":"happner-dashboard",
+			"name":"happner-dashboard",
 			"path":__dirname + '/index.js',
 			"autoload":{
 				"component":{
