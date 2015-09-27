@@ -1650,9 +1650,11 @@ a:focus {
   border: 0;
   box-shadow: none;
 }
+/*
 .box.box-solid[class*='bg'] > .box-header {
   color: #fff;
 }
+*/
 .box .box-group > .box {
   margin-bottom: 5px;
 }
@@ -1708,7 +1710,6 @@ a:focus {
   clear: both;
 }
 .box-header {
-  color: #444;
   display: block;
   padding: 10px;
   position: relative;
@@ -2601,10 +2602,12 @@ a:focus {
 .product-list-in-box > .item:last-of-type {
   border-bottom-width: 0;
 }
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border:none!important;
+}
+
 /*
- * Component: Table
- * ----------------
- */
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -2639,7 +2642,7 @@ a:focus {
 .table.no-border th {
   border: 0;
 }
-/* .text-center in tables */
+
 table.text-center,
 table.text-center td,
 table.text-center th {
@@ -2651,6 +2654,9 @@ table.text-center th {
 .table.align td {
   text-align: right;
 }
+
+*/
+
 /*
  * Component: Label
  * ----------------
@@ -4159,8 +4165,10 @@ table.text-center th {
 .bg-fuchsia-active,
 .bg-purple-active,
 .bg-maroon-active,
+/*
 .bg-black-active,
 .bg-gray-dark-active,
+*/
 .callout.callout-danger,
 .callout.callout-warning,
 .callout.callout-info,
@@ -4194,12 +4202,12 @@ table.text-center th {
 }
 
 .bg-gray-dark {
-  color: white !important;
+  color: #06e514 !important;
   background-color: #222d32 !important;
 }
 
 .bg-gray-dark a {
-  color: white !important;
+  color: #06e514 !important;
   background-color: #222d32 !important;
 }
 
@@ -4211,8 +4219,15 @@ table.text-center th {
   background-color: #f7f7f7;
 }
 .bg-black {
+  color: #06e514 !important;
   background-color: #111111 !important;
 }
+
+.bg-black a {
+  color: #06e514 !important;
+  background-color: #222d32 !important;
+}
+
 .bg-red,
 .callout.callout-danger,
 .alert-danger,
