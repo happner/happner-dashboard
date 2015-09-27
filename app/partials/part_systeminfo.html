@@ -10,9 +10,12 @@
   <table class="table table-hover" ng-controller="part_systeminfo">
     <tbody>
     <tr>
-      <td>{{data.system.host}}&nbsp;{{data.system.meshName}}</td>
+      <td colspan="2">{{data.system.host}}&nbsp;{{data.system.meshName}}</td>
       <td><span class="label label-success">up</span></td>
-      <td>started <span am-time-ago="data.proc.up"></span></td>
+    </tr>
+     <tr>
+      <td>uptime</td>
+      <td colspan="2"><span am-time-ago="data.proc.up"></span></td>
     </tr>
     <tr ng-if="data.system.platform && data.system.release">
       <td>platform</td>
