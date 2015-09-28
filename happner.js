@@ -1,6 +1,6 @@
 module.exports = {
   configs: {
-    "autoload":{
+    "autoload": [{
       "component":{
         name: "happner-dashboard",
         config: {
@@ -15,7 +15,7 @@ module.exports = {
           }
         }
       }
-    }
+    }]
   }
 }
 
