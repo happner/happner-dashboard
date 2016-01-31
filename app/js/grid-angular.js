@@ -2,9 +2,9 @@
 
 /* App Module */
 
-var grid_app = angular.module('grid_app', [  
-  'ui.bootstrap',                                            
-  'ngAnimate',
+var grid_app = angular.module('grid_app', [
+  'ui.bootstrap',
+  /*'ngAnimate',*/
   'chart.js',
   'angularMoment'
 ]);
@@ -27,7 +27,7 @@ grid_app.config(['ChartJsProvider', function (ChartJsProvider) {
 var registerDataService = function (serviceName) {
 	grid_app.factory(serviceName, function (happnClient) {
         var _happn = null;
-        
+
         return {
             instance:happnClient,
             init: function (host, port, secret, done) {
@@ -38,10 +38,10 @@ var registerDataService = function (serviceName) {
             	{
             		var currentNode = data;
             		var found = false;
-            		
+
             		if (path[0] = '/')
             			path = path.substring(1, path.length);
-            	
+
                 	path.split('/').map(function(current, index, arr){
                 		currentNode = currentNode[current];
                 		if (index + 1 == arr.length && currentNode){
@@ -49,13 +49,13 @@ var registerDataService = function (serviceName) {
                 			done(null, currentNode);
                 		}
                 	});
-                	
+
                 	if (!found)
                 		done(null, null);
             	}catch(e){
             		done(e);
             	}
-            	
+
             }
         };
     });
@@ -89,27 +89,27 @@ grid_app.controller('meshDashBoardController', ['$scope', '$modal', '$window', f
       if (handler)
           modalInstance.result.then(handler.saved, handler.dismissed);
      };
-          
+
      $scope.openNewModal = function (type, action) {
-         
+
          var handler = {
                  saved:function(result){
                  },
                  dismissed:function(){
-                    
+
                  }
          };
-         
+
          return $scope.openModal('../templates/' + action + '.html', action.toString(), handler);
      };
-    
+
 
     $scope.dataBindInformation = function(sysInfo){
       if (!$scope.managed)
          $scope.managed = {components:[]};
 
       $scope.managed.name = sysInfo.system.meshName;
-      
+
       for (var componentName in $scope.meshAPIClient._mesh.config.components){
 
         var componentConfig = $scope.meshAPIClient._mesh.description.components[componentName];
